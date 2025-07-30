@@ -1,0 +1,338 @@
+/* Reset + Base */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+.site-header {
+  background-color: #4e342e;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 200px;
+  margin-right: 10px;
+}
+
+.brand-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.navbar {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ffccbc;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: #ffccbc;
+}
+
+/* Hero */
+#hero {
+  background-color: #ffe0b2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Cards */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff8e1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Calculator */
+#loan-calculator {
+  padding: 30px;
+  background-color: #fbe9e7;
+}
+
+#loan-calculator form {
+  display: grid;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+#loan-calculator input,
+#loan-calculator button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#loan-calculator button {
+  background-color: #4e342e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#loan-calculator button:hover {
+  background-color: #6d4c41;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Achievements */
+#achievements {
+  background: #fff3e0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.counter-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.counter-box h3 {
+  font-size: 36px;
+  color: #4e342e;
+}
+
+.counter-box p {
+  margin-top: 8px;
+}
+
+/* Contact */
+#contact {
+  padding: 30px;
+}
+
+#contact form {
+  display: grid;
+  max-width: 500px;
+  margin: auto;
+  gap: 15px;
+}
+
+/* Team */
+#team {
+  padding: 30px;
+  background: #fff8e1;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.member-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  transition: all 0.3s ease-in-out;
+}
+
+.member-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Partner Banks */
+#partners {
+  padding: 30px 20px;
+  background: #fbe9e7;
+  text-align: center;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.partner-logos img {
+  height: 50px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.partner-logos img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background-color: #3e2723;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container h3 {
+  color: #ffccbc;
+  margin-bottom: 10px;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container ul li {
+  margin-bottom: 8px;
+}
+
+.footer-container ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-container ul li a:hover {
+  color: #ffd180;
+}
+
+.footer-about p,
+.footer-contact p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #795548;
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.stats-section {
+  padding: 50px 20px;
+  background: #fbe9e7;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.stat-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.progress-bar {
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  position: relative;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #4e342e;
+  border-radius: 10px;
+  transition: width 2s ease-in-out;
+}
+
+.pie-chart-box {
+  padding-top: 20px;
+}
